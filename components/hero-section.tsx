@@ -25,10 +25,11 @@ function AnimatedChart() {
             onMouseEnter={() => setLogoHovered(true)}
             onMouseLeave={() => setLogoHovered(false)}
           >
-            <div className={`relative h-24 w-24 overflow-hidden rounded-2xl flex items-center justify-center shadow-lg shadow-primary/30 transition-all duration-500 ${logoHovered ? "scale-110 rotate-3" : "scale-100 rotate-0"}`}>
-              <img src="/nexa.png" alt="NEXA" className="h-full w-full object-cover" />
-              {/* Glow effect */}
-              <div className={`absolute inset-0 rounded-2xl bg-primary blur-md transition-opacity duration-500 ${logoHovered ? "opacity-60" : "opacity-30"}`} />
+            <div className={`relative flex items-center gap-3 rounded-2xl bg-card px-5 py-3.5 shadow-lg shadow-primary/30 transition-all duration-500 ${logoHovered ? "scale-110 rotate-3" : "scale-100 rotate-0"}`}>
+              <div className="h-16 w-16 overflow-hidden rounded-xl flex items-center justify-center">
+                <img src="/nexafavicon.jpg" alt="NEXA" className="h-full w-full object-cover" />
+              </div>
+              <span className="text-2xl font-bold text-primary">NEXA</span>
               {/* Badge animado */}
               <div className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-green-500 border-2 border-card animate-pulse" />
             </div>

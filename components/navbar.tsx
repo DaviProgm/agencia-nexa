@@ -32,7 +32,8 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
-          <img src="/nexa.png" alt="NEXA" className="flex h-35 w-35" />
+          <img src="/nexafavicon.jpg" alt="NEXA" className="h-12 w-12 rounded-lg object-cover" />
+          <span className="text-xl font-bold text-primary">NEXA</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

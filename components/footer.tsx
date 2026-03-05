@@ -27,7 +27,10 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <img src="/nexa.png" alt="NEXA" className="h-12 w-auto mb-4" />
+            <div className="flex items-center gap-2 mb-4">
+              <img src="/nexafavicon.jpg" alt="NEXA" className="h-12 w-12 rounded-lg object-cover" />
+              <span className="text-xl font-bold text-background">NEXA</span>
+            </div>
             <p className="text-sm text-background/50 leading-relaxed mb-4">
               Engenharia de crescimento para empresas que querem escalar com previsibilidade.
             </p>
